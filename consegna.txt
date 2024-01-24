@@ -1,0 +1,25 @@
+Scrivere uno scriptino js che faccia questo:
+
+
+- dichiarare la classe Smartphone, 
+    che deve avere le seguenti proprietà
+        model
+        ramGb
+        release_year
+        price
+        has5G
+    e questi metodi
+        age
+        toString
+
+- deve avere questa funzione standalone (globale):
+    findMostExpensive(a,b,c,d)  (4 parametri Smartphone)
+    deve stampare in console il più costoso
+
+
+- la parte di inizializzazione che:
+    crei 4 Smartphone
+    stampi il più costoso
+
+
+

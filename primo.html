@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="primo.js"></script>
+    </head>
+    <body>
+
+        <!-- HTML definisce la STRUTTURA della pagina, gli elementi al suo interno-->
+        <!-- CSS definisce lo STILE, come appaiono gli elementi-->
+        <!-- JavaScript definisce L'ANIMA, la LOGICA della pagina-->
+        <div id="nontopolino">
+            <div onclick="cambiaParola()" id="scatolone" style="background-color: #ffe4c4;color: #006400;">
+
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dicta tenetur. Non dolores beatae assumenda? Vitae dolores expedita voluptatum totam quos provident, sed beatae, blanditiis reprehenderit harum optio ad nesciunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dicta tenetur. Non dolores beatae assumenda? Vitae dolores expedita voluptatum totam quos provident, sed beatae, blanditiis reprehenderit harum optio ad nesciunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dicta tenetur. Non dolores beatae assumenda? Vitae dolores expedita voluptatum totam quos provident, sed beatae, blanditiis reprehenderit harum optio ad nesciunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dicta tenetur. Non dolores beatae assumenda? Vitae dolores expedita voluptatum totam quos provident, sed beatae, blanditiis reprehenderit harum optio ad nesciunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dicta tenetur. Non dolores beatae assumenda? Vitae dolores expedita voluptatum totam quos provident, sed beatae, blanditiis reprehenderit harum optio ad nesciunt.</p>
+
+            </div>
+
+            Parola da sostituire<input type="text" id="dacambiare"/> <br/>
+            Nuova parola<input type="text" id="nuovaparola"/> 
+            <br/>
+            <button onclick="cambiaParola();">Sostituisci parole</button>
+
+            <button onclick="topolino();">Topolinizza</button>
+        </div>
+        <div id="topolino"></div>
+        <!-- 
+            UN EVENTO È QUALSIASI COSA ACCADA SULLA PAGINA
+            es:
+                Click di utente su qualcosa
+                Digitazione
+                Tempo Trascorso
+
+            Javascript definisce FUNZIONI che si attivano per TALI EVENTI
+        -->
+    </body>
+
+</html>
