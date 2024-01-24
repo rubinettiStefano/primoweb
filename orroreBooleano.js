@@ -32,13 +32,12 @@ else
 //è equivalente a
 if(faccioFintaDiEssereUnBooleano)//se esiste
 {
-
+    
 }
 
-//se è nulla
-if(!faccioFintaDiEssereUnBooleano)//se non esiste
+if(!faccioFintaDiEssereUnBooleano)//se non esiste ==null
 {
-
+    //if(faccioFintaDiEssereUnBooleano==null)
 }
 
 
