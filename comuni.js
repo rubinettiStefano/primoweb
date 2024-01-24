@@ -11,6 +11,32 @@ class Citta
     }
 }
 
+let filterByProvince =()=>
+{
+    let ilMioDiv =  document. //l'intera pagina web
+                    getElementById("listacomuni");
+
+    let prov = document.getElementById("inprov").value;
+    prov = prov.toUpperCase();
+
+    console.log("Avvenuto evento keypress su input, valore attuale:"+prov);
+
+    let comuniHtmlzzati = comuni.filter(c=>c.provincia.startsWith(prov)).map(c=> `
+                                            <div class="w3-col m4 l4 w3-padding">
+                                                <div class="w3-card-4" >
+                                                    <img src="${c.foto}" alt="Avatar" width="100%" height="250">
+                                                    <div class="w3-container">
+                                                    <h4><b>${c.nome} (${c.provincia})</b></h4>    
+                                                    <p>Regione: ${c.regione}  Abitanti: ${c.abitanti}</p>    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         `);
+    let versioneHtmlComuni = comuniHtmlzzati.join("");
+    ilMioDiv.innerHTML = versioneHtmlComuni;
+}
+
+
 //funzione che deve riempire il div con id="listacomuni" con le card dei vari comuni
 let init =()=>
 {
@@ -35,8 +61,6 @@ let init =()=>
     //da vettore di STring ottengo una unica string, le accodo tutte
     let versioneHtmlComuni = comuniHtmlzzati.join("");
     ilMioDiv.innerHTML = versioneHtmlComuni;
-
-
 }
 
 //ESECUZIONE - INIZIALIZZAZIONE
